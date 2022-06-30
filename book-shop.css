@@ -1,0 +1,324 @@
+:root{
+    --bgcolor:#fff; /* #fff #000 */
+    --font_color:#000; /*#000 #fff*/
+    --gradient_color: #ff0;/* #ff0; rgb(58, 11, 85);*/
+    --gradient2:rgb(233, 148, 92);/* rgb(233, 148, 92);rgb(8, 73, 8);*/
+    --shadow:rgb(8, 73, 8);/*rgb(8, 73, 8); rgb(233, 148, 92);*/
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    background-color: var(--bgcolor);
+    color:var(--font_color);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#navbar {
+    display: block;
+    background-color: var(--bgcolor);
+    color:var(--font_color);
+    padding-top: 1rem;
+    position: fixed;
+    right:1%;
+    top: 2px;
+    z-index: 1;
+}
+.nav_item{
+    text-decoration: none;
+    font-family: fantasy;
+    font-style: italic;
+    font-weight: 400;
+    color:var(--font_color);
+    padding:0.8rem;
+    transition-duration: 0.8s;
+    transition-property: all;
+}
+
+.nav_item:hover{
+    font-size: 1.2em;
+    background-color:var(--font_color);
+    color:var(--bgcolor);
+    font-style: bold;
+}
+.logo{
+    width:30px;
+}
+#intro{
+    width:100%;
+    padding:1.5rem;
+    color:var(--font_color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--bgcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background:linear-gradient(225deg,var(--bgcolor),var(--gradient_color));
+}
+
+
+#intro_text{
+    font-size: 2rem;
+    display: flex;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#intro_scroll_anchor{
+    font-size: 1.2rem;
+    background-color: var(--font_color);
+    color:var(--bgcolor);
+    transition: all;
+    margin:0;
+    border-radius: 4rem;
+    padding:1rem;
+    transition-duration: 0.5s;
+    text-decoration: none;
+}
+#intro_scroll_anchor:hover{
+    font-size: 1.4rem;
+    background-color: var(--bgcolor);
+    color:var(--font_color)
+}
+#intro_image{
+    padding:2rem 2rem 3rem 5rem;
+    width:50%;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.bookimg{
+    height: 10rem;
+}
+.book_container{
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    height: fit-content;
+    padding:0.2rem;
+    margin:0.5rem;
+    width:25%;
+    border: 2px var(--font_color) dotted;
+    border-radius: 0.5rem;
+    box-shadow:var(--shadow) 10px 7px px;
+    
+    color:var(--font_color);
+    font-weight:bolder;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.book_container:hover{
+    background:radial-gradient(var(--bgcolor),var(--gradient2));
+    font-size: 1.2em;
+}
+.book_desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.book_desc p{
+    font-size: 1.4rem;
+}
+.price{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-style: italic;
+    color:var(--bgcolor);
+    background-color: var(--font_color);
+    padding:0.2rem;
+    margin:0.2rem;
+    border-radius: 1rem;
+}
+#recommended{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#recommended nav{
+    padding:1rem;
+    margin:1rem;
+    background-color: var(--bgcolor);
+    color:var(--font_color);
+}
+#recommended div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#recommended .book_container:hover{
+    background:radial-gradient(var(--bgcolor),var(--gradient_color));
+}
+.small{
+    width:2rem;
+}
+
+#reviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.reviewer{
+    font-size: 1.5rem;
+    font-style: bold;
+}
+.review_card{
+    border:2px var(--font_color) solid;
+    width:25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:0.8rem;
+    margin:1rem;
+    transition:all;
+    transition-duration: 0.6s;
+}
+.review_card:hover{
+    background: radial-gradient(var(--bgcolor),var(--gradient_color));
+    font-size: 1.1em;
+}
+.review_img{
+    width:60%;
+    padding: 0.5rem;
+}
+#myform{
+    width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0.4em;
+    margin:0.5rem;
+    background:linear-gradient(45deg,var(--gradient_color),var(--gradient2));
+    color:var(--font_color);
+    font-size: 1.4rem;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+#myform label{
+    transition:all;
+    transition-duration: 0.6s;
+    padding: 0.4rem;
+}
+#myform label:hover{
+    background-color: var(--shadow);
+    color:var(--bgcolor);
+    font-size: 1.1em;
+    
+}
+#review_textarea{
+    padding: 1rem;
+}
+#submit_button{
+    width:40%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background:linear-gradient(225deg,var(--gradient_color),var(--gradient2));
+    color:var(--font_color);
+    border-radius: 1rem;
+    transition: all;
+    transition-duration: 0.4s;
+}
+#submit_button:hover{
+    font-size: 1.3em;
+
+}
+#footer{
+    background-color: var(--shadow);
+    color:var(--bgcolor);
+    height: fit-content;
+    width: 100%;
+    padding:1rem 10rem;
+    font-size: 1.4rem;
+}
+#footer a{
+    text-decoration:none;
+    padding:0.5rem;
+    color:var(--bgcolor);
+}
+
+#back_to_top_link{
+    text-decoration:none;
+    position: fixed;
+    z-index:4;
+    bottom:6%;
+    font-size: 1rem;
+    right:1%;
+    border-radius: 2rem;
+    padding:0.2rem;
+    background-color: #fff;
+    transition: all;
+    transition-duration: 0.3s;
+}
+#back_to_top_link:hover{
+    padding:0.6rem;
+}
+#footer p{
+    display: block;
+}
+#small_font{
+    padding:1rem;
+    font-size: 0.8rem;
+}
+#footer_first_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#social_links{
+    display: flex;
+    flex-direction: row;
+}
+.social{
+    width:2rem;
+    padding:0;
+    margin:0.3rem;
+}
+@media(max-width:750px)
+{
+    #intro:hover{
+        z-index:3;
+    }
+    .book_container{
+        width:34%;
+    }
+    #intro_image{
+        width:100%;
+    }
+    .review_card{
+        width:40%;
+    }
+    #myform{
+        width:40%;
+    }
+
+}
+@media(max-width:548px)
+{
+    .book_container{
+        width:100%;
+    }
+    #intro_image{
+        width:100%;
+    }
+    .review_card{
+        width:100%;
+    }
+    #myform{
+        width:100%;
+        background-color: #000;
+    }
+}

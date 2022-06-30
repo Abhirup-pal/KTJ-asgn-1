@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="book-shop.css">
+</head>
+
+<body>
+    <nav id="navbar" class="hover_effect">
+        <a href="#intro" class="nav_item">
+            HOME
+        </a>
+        <a href="#best_selling" class="nav_item">
+            BEST SELLING BOOKS
+        </a>
+        <a href="#recommended" class="nav_item">
+            OUR RECOMMENDATIONS
+        </a>
+        <a href="#reviews" class="nav_item">
+            REVIEWS
+        </a>
+
+        <a href="#footer" class="nav_item">
+            CONTACT US
+        </a>
+        <label for="mode" class="nav_item" onclick=change_mode()>
+            <img src="light.jpeg" alt="" class="logo" id="dark_mode_logo">
+            <img src="dark.jpeg" alt="" class="logo" id="light_mode_logo" style="display:none">
+        </label>
+    </nav>
+    <div id="intro">
+        <div id="intro_text">
+            Welcome to <br> The White Castle Book Shop
+            <br> <br>
+            <a href="#best_selling" id="intro_scroll_anchor">Best selling Books</a>
+        </div>
+        <img src="istockphoto-1129874863-170667a.jpg" alt="" id="intro_image">
+
+    </div>
+    <h2>
+        OUR BEST SELLING BOOKS
+    </h2>
+    <div id="best_selling">
+
+        <div class="container">
+            <div class="book_container">
+                <div class="book_desc">
+                    <img src="download.jpg" alt="" class="bookimg">
+                    <p>The Good Book by David Plotz<br></p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur molestiae mollitia temporibus
+                    ratione deserunt voluptatum soluta officia atque totam aspernatur.
+                </div>
+                <div class="price">Rs.250/-</div>
+            </div>
+            <div class="book_container">
+                <div class="book_desc">
+                    <img src="download (1).jpg" alt="" class="bookimg">
+                    <p>The Sherlock effect by Raymond K Iyon <br></p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur molestiae mollitia temporibus
+                    ratione deserunt voluptatum soluta officia atque totam aspernatur.
+                </div>
+                <div class="price">Rs.250/-</div>
+            </div>
+            <div class="book_container">
+                <div class="book_desc">
+                    <img src="416Z99JF6AS._SX198_BO1,204,203,200_QL40_FMwebp_1.webp" alt="" class="bookimg">
+                    <p>The Power of a Positive Attitude by Roger Fritz <br></p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur molestiae mollitia temporibus
+                    ratione deserunt voluptatum soluta officia atque totam aspernatur.
+                </div>
+                <div class="price">Rs.250/-</div>
+            </div>
+            <div class="book_container">
+                <div class="book_desc">
+                    <img src="download (1).jpg" alt="" class="bookimg">
+                    <p>The Sherlock effect by Raymond K Iyon <br></p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur molestiae mollitia temporibus
+                    ratione deserunt voluptatum soluta officia atque totam aspernatur.
+                </div>
+                <div class="price">Rs.250/-</div>
+            </div>
+            <div class="book_container">
+                <div class="book_desc">
+                    <img src="41U9GSsfceL.jpg" alt="" class="bookimg">
+                    <p>The Hill by Andrew M Stafford<br></p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur molestiae mollitia temporibus
+                    ratione deserunt voluptatum soluta officia atque totam aspernatur.
+                </div>
+                <div class="price">Rs.250/-</div>
+            </div>
+            <div class="book_container">
+                <div class="book_desc">
+                    <img src="download.jpg" alt="" class="bookimg">
+                    <p>The Good Book by David Plotz is a really gud book <br></p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur molestiae mollitia temporibus
+                    ratione deserunt voluptatum soluta officia atque totam aspernatur.
+                </div>
+                <div class="price">Rs.250/-</div>
+            </div>
+        </div>
+    </div>
+    <h2>
+        OUR RECOMMENDATIONS
+    </h2>
+    <div id="recommended">
+        <nav>
+            <input type="textarea" placeholder="Search">
+            <button><img src="search.png" alt="" class="small"></button>
+        </nav>
+        <div>
+            <div class="book_container">
+                <div class="book_desc">
+                    <img src="416Z99JF6AS._SX198_BO1,204,203,200_QL40_FMwebp_1.webp" alt="" class="bookimg">
+                    <p>The Power of a Positive Attitude by Roger Fritz <br></p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur molestiae mollitia temporibus
+                    ratione deserunt voluptatum soluta officia atque totam aspernatur.
+                </div>
+                <div class="price">Rs.250/-</div>
+            </div>
+            <div class="book_container">
+                <div class="book_desc">
+                    <img src="download (1).jpg" alt="" class="bookimg">
+                    <p>The Sherlock effect by Raymond K Iyon <br></p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur molestiae mollitia temporibus
+                    ratione deserunt voluptatum soluta officia atque totam aspernatur.
+                </div>
+                <div class="price">Rs.250/-</div>
+            </div>
+            <div class="book_container">
+                <div class="book_desc">
+                    <img src="41U9GSsfceL.jpg" alt="" class="bookimg">
+                    <p>The Hill by Andrew M Stafford<br></p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur molestiae mollitia temporibus
+                    ratione deserunt voluptatum soluta officia atque totam aspernatur.
+                </div>
+                <div class="price">Rs.250/-</div>
+            </div>
+        </div>
+    </div>
+    <h2>
+        REVIEWS
+    </h2>
+    <div id="reviews">
+
+        <div class="review_card">
+            <img src="download2.jpg" alt="" class="review_img">
+            <div class="reviewer">Ben Dover</div>
+            <div class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae mollitia debitis
+                veritatis, aspernatur reprehenderit sapiente eius quaerat asperiores ipsam, consequuntur facere officia
+                ipsa eaque perspiciatis quidem temporibus est ut nihil deleniti, ullam voluptatem sunt!</div>
+        </div>
+        <div class="review_card">
+            <img src="photo-1438761681033-6461ffad8d80.jpg" alt="" class="review_img">
+            <div class="reviewer">Chanendler Bong</div>
+            <div class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae mollitia debitis
+                veritatis, aspernatur reprehenderit sapiente eius quaerat asperiores ipsam, consequuntur facere officia
+                ipsa eaque perspiciatis quidem temporibus est ut nihil deleniti, ullam voluptatem sunt!</div>
+        </div>
+        <form action="none" id="myform">
+            <p>
+                What do you think of us? Fill up this form to let us know. Your feedback means a lot to us.
+            </p>
+            <label for="name">
+                Your Name : <input type="text">
+            </label>
+
+            <label for="email">
+                Your Email id: <input type="email">
+            </label>
+
+            <label for="review">
+                Your Review : <input type="textarea" id="review_textarea">
+            </label>
+            <button id="submit_button">Submit</button>
+        </form>
+    </div>
+    <div id="footer">
+        <div id="footer_first_section">
+            <p>
+                Follow us on our Social Media pages:
+            </p>
+            <div id="social_links">
+                <a href="https://facebook.com/fake_profile" class="social" target="_blank">
+                    <img src="fb.png" alt="" class="social">
+                </a>
+                <a href="https://instagram.com/fake_profile" class="social" target="_blank">
+                    <img src="insta.png" alt="" class="social">
+                </a>
+                <a href="https://linkedin.com/fake_profile" class="social" target="_blank">
+                    <img src="linkedin.png" alt="" class="social">
+                </a>
+            </div>
+            <div id="small_font">
+                <a href="dummyt&c.com" target="_blank">Terms and Conditions applied</a>
+                <a href="compyrimght.com" target="_blank">Copyright 2022</a>
+            </div>
+        </div>
+        <div>
+            <a href="#intro" id="back_to_top_link">
+                <img src="back_to_top.png" class="social" alt="">
+            </a>
+        </div>
+    </div>
+
+</body>
+<script>
+    //this javascript is only included to switch between light and dark modes
+    let r = document.querySelector(':root');
+    let mode = 0;
+    let lightlogo = document.getElementById('light_mode_logo');
+    let darklogo = document.getElementById('dark_mode_logo');
+    function change_mode() {
+        if (mode == 0) {
+            r.style.setProperty('--bgcolor', '#000');
+            r.style.setProperty('--font_color', '#fff');
+            r.style.setProperty('--gradient_color', 'rgb(58, 11, 85)');
+            r.style.setProperty('--gradient2', 'rgb(8, 73, 8)');
+            r.style.setProperty('--shadow', 'rgb(233, 148, 92');
+            mode = 1;
+            darklogo.style.display = 'none';
+            lightlogo.style.display = 'inline';
+        }
+        else {
+            r.style.setProperty('--bgcolor', '#fff');
+            r.style.setProperty('--font_color', '#000');
+            r.style.setProperty('--gradient_color', '#ff0');
+            r.style.setProperty('--gradient2', 'rgb(233, 148, 92)');
+            r.style.setProperty('--shadow', 'rgb(8, 73, 8)');
+            mode = 0;
+            darklogo.style.display = 'inline';
+            lightlogo.style.display = 'none';
+        }
+    }
+
+</script>
+
+</html>
